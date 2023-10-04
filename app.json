@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "Rooms",
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ],
+    "slug": "Rooms",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "rooms.ios",
+      "buildNumber": "30"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "rooms.android",
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "owner": "mandella90",
+    "extra": {
+      "eas": {
+        "projectId": "38a5df94-53d7-4366-ac46-37c0603f5d46"
+      }
+    }
+  },
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-4831537919211081~7426875281",
+    "ios_app_id": "ca-app-pub-4831537919211081~6886978915",
+    "user_tracking_usage_description": "This identifier will be used to deliver personalized ads to you."
+  }
+}
