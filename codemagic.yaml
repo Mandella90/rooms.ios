@@ -1,0 +1,35 @@
+workflows:
+  expo-ios:
+    name: Expo iOS
+    max_build_duration: 60
+    instance_type: mac_mini_m1
+
+    environment:
+      groups:
+        - rooms
+      node: latest
+    
+    scripts:
+      - | 
+        # Install dependencies
+        npm install
+        # Install Expo CLI
+        npm install -g expo-cli
+        # Login to Expo (Optional but might be needed for certain commands)
+        # expo login -u Mandella90 -p $EXPO_PASSWORD
+        # Publish to Expo
+        expo publish
+        # Build the iOS standalone app
+        expo build:ios --type archive
+
+    # Adjust the artifact path for Expo
+    artifacts:
+      - /tmp/turtle/*.ipa
+
+    publishing:
+      email:
+        recipients:
+          - 'natestrehlow@yahoo.com'
+      app_store_connect:
+        apple_id: natestrehlow@yahoo.com
+        password: $password
