@@ -31,7 +31,11 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "rooms.ios",
-      "buildNumber": "30"
+      "buildNumber": "38",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We use your location to place you in the appropriate chat room based on where you are. Your location is only accessed when the app is in use.",
+        "NSUserTrackingUsageDescription": "We request permission to track user data only for the delivering personalized ads."
+      }
     },
     "android": {
       "adaptiveIcon": {

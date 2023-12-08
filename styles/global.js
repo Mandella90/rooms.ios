@@ -2,7 +2,6 @@ import { StyleSheet, Text} from 'react-native'
 import { Dimensions } from 'react-native';
 
 const {height, width} = Dimensions.get('window')
-const flatHeight = height * .85
 const messagerHeight = height *.15
 
 export const globalStyles = StyleSheet.create({
@@ -22,6 +21,9 @@ export const globalStyles = StyleSheet.create({
     paddingHorizontal:10,
     borderRadius: 10,
     marginVertical: 2
+  },
+    smallText: {
+    fontSize: height*.02
   },
     basicText: {
     fontSize: height*.03,
@@ -132,6 +134,7 @@ export const globalStyles = StyleSheet.create({
     alignItems: "center",
     width: width,
     height: height
+
   },  
   titleCont: {
     position: 'absolute',
@@ -173,7 +176,7 @@ export const globalStyles = StyleSheet.create({
   },
   modalAlert:{    
     height: height*.5,
-    width: width*.9,
+    width: width*.8,
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
@@ -190,6 +193,9 @@ export const globalStyles = StyleSheet.create({
     justifyContent: "flex-start",
     backgroundColor: "black",
     alignItems: "center",
+    width: width,
+    height: height
+
 },
 flatList: {
     flex: 9,  // this value can be adjusted as per your requirement
@@ -213,47 +219,9 @@ messageCont: {
 bannerAd: {
     position: 'absolute',
     top: 0,
-    backgroundColor: 'red'
-}
+    backgroundColor: 'black'
+},
 
 
-
-
-
-
-  //  CHATROOM CONT   CHATROOM CONT   CHATROOM CONT   CHATROOM CONT
-  /*bigCont: {
-    flex: 1,
-    height: height,
-    flexDirection: "column",
-    justifyContent: "flex-start",
-    backgroundColor: "black",
-    alignItems: "center",
-  },
-  flatList: {
-    height: flatHeight,
-    width: "98%",
-    maxWidth: 1000,
-    backgroundColor: "black",
-    overflow: 'scroll'
-  },
-  messageCont: {
-    flex: 1,
-    flexDirection: "row",
-    width: width,
-    maxWidth: 1000,
-    height: messagerHeight,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderTopWidth: 4,
-    borderTopColor: "#DD63DA",
-    marginTop: height*.03,
-  },
-  //  ADS   ADS   ADS   ADS   
-  bannerAd: {
-    position: 'absolute',
-    top: 0,
-    backgroundColor: 'red'
-  }*/
 })
 

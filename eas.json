@@ -16,12 +16,23 @@
       "distribution": "internal"
     },
     "production": {
-      "autoIncrement": true
+      "distribution": "store",
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      },
+      "ios": {
+        "buildConfiguration": "Release",
+        "autoIncrement": false
+      }
     }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "ios": {
+        "appleId": "natestrehlow@yahoo.com",
+        "ascAppId": "6462336009",
+        "appleTeamId": "9Z37TY6LK8"
+      }
+    }
   }
 }
-
-
