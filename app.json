@@ -51,13 +51,13 @@
     "owner": "mandella90",
     "extra": {
       "eas": {
-        "projectId": "38a5df94-53d7-4366-ac46-37c0603f5d46"
+        "projectId": ""
       }
     }
   },
   "react-native-google-mobile-ads": {
-    "android_app_id": "ca-app-pub-4831537919211081~7426875281",
-    "ios_app_id": "ca-app-pub-4831537919211081~6886978915",
+    "android_app_id": "",
+    "ios_app_id": "",
     "user_tracking_usage_description": "This identifier will be used to deliver personalized ads to you."
   }
 }
